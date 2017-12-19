@@ -1,3 +1,3 @@
-# Bit By Bit Official Website
+# Personal Website Attempt 1
 
-designed and deployed by [Alvin Wan](http://alvinwan.com)
+Leaving filler designed by [Alvin Wan](http://alvinwan.com) until I figure out CSS
