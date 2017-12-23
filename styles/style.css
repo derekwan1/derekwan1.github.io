@@ -356,7 +356,7 @@ aside li:last-child::before {
     display:inline-block;
 }
 .person {
-    width:80px;
+    width:50%;
     text-align:center;
     margin-top:3em;
 }
