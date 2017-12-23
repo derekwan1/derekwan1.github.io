@@ -329,7 +329,7 @@ aside li:last-child::before {
     background-color:#FFF;
 }
 .section-people {
-    padding:1em 10% 3em 10%;
+    padding:1em 5% 3em 5%;
 }
 .section-bg {
     overflow:hidden;
