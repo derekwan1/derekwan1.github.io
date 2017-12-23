@@ -371,6 +371,12 @@ aside li:last-child::before {
     text-align:center;
     width:100%;
 }
+.section-people h1 {
+    font-family:'Rock Salt';
+    font-size:2.8em;
+    color:#FFF;
+    line-height:150%;
+}
 
 /**********
  * Method *
