@@ -1,538 +1,1075 @@
 /* designed/built by Alvin Wan 08/06/17 */
+
 * {
+
     float:left;
+
     position:relative;
+
     font-family:'Quicksand';
+
     margin:0;
+
     padding:0;
+
 }
+
 body, html, main,section,footer {
+
     width:100%;
+
 }
+
+
 
 .landing {
+
     z-index:1;
+
 }
+
 .about {
+
     z-index:2;
+
 }
+
 .map {
+
     z-index:3;
+
 }
+
 .method, footer {
+
     z-index:4;
+
 }
+
 .landing-boy {
+
     z-index:5;
+
 }
+
 .section-bg {
+
     position:absolute;
+
     top:0;
+
     bottom:0;
+
     z-index:-1;
+
 }
+
+
 
 /***********
+
  * Landing *
+
  ***********/
 
+
+
 .section-bg,.section-bg-gradient,.section .bg {
+
     width:100%;
+
 }
+
 .landing-boy {
+
     position:absolute;
+
     left:15%;
+
     margin-top:6em;
+
     z-index:11;
+
 }
+
 .section-bg-gradient {
+
     position:absolute;
+
     top:0;
+
     left:0;
+
     z-index:10;
+
     display:block;
+
     min-height:100%;
+
     opacity:0.8;
+
 }
+
 .landing .bg {
+
     margin-top:-9.5em;
+
 }
+
 .section-bg .bg {
+
     z-index:5;
+
     position:absolute;
+
     top:0;
+
     bottom:0;
+
     display:block;
+
     width:100%;
+
 }
+
 aside,.section-bg-gradient {
+
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7931e+0,d9e021+100 */
+
     background: #f7931e; /* Old browsers */
+
     background: -moz-linear-gradient(top, #f7931e 0%, #d9e021 100%); /* FF3.6-15 */
+
     background: -webkit-linear-gradient(top, #f7931e 0%,#d9e021 100%); /* Chrome10-25,Safari5.1-6 */
+
     background: linear-gradient(to bottom, #f7931e 0%,#d9e021 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7931e', endColorstr='#d9e021',GradientType=0 ); /* IE6-9 */
+
 }
+
 aside.upsidedown,.section-bg-gradient.upsidedown {
+
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d9e021+0,d9e021+0,f7931e+100,f7931e+100 */
+
     background: #d9e021; /* Old browsers */
+
     background: -moz-linear-gradient(top, #d9e021 0%, #d9e021 0%, #f7931e 100%, #f7931e 100%); /* FF3.6-15 */
+
     background: -webkit-linear-gradient(top, #d9e021 0%,#d9e021 0%,#f7931e 100%,#f7931e 100%); /* Chrome10-25,Safari5.1-6 */
+
     background: linear-gradient(to bottom, #d9e021 0%,#d9e021 0%,#f7931e 100%,#f7931e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e021', endColorstr='#f7931e',GradientType=0 ); /* IE6-9 */
+
 }
+
 .landing-text {
+
     margin-bottom:15em;
+
     text-align:right;
+
     z-index:6;
+
     width:100%;
+
     box-sizing:border-box;
+
     top:0;
+
     padding:15% 15% 5% 15%;
+
 }
+
+
 
 .landing-text h1 {
+
     font-family:'Rock Salt';
+
     font-size:2.8em;
+
     color:#FFF;
+
     line-height:150%;
+
 }
+
 .landing-text .copy {
+
     color:#FFF;
+
     line-height:200%;
+
     margin-top:2em;
+
 }
+
 .landing-text .button {
+
     margin-top:1em;
+
 }
+
 aside {
+
     width:100%;
+
     z-index:10;
+
     box-shadow:0 0 5em rgba(0,0,0,0.5);
+
     box-sizing:border-box;
+
     padding:15%;
+
     color:#FFF;
+
 }
+
 aside .logo {
+
     width:5em;
+
 }
+
 aside h1 {
+
     font-family:'Rock Salt';
+
     font-size:3.5em;
+
     line-height:150%;
+
     width:100%;
+
 }
+
 aside .copy {
+
     margin-top:1em;
+
     line-height:200%;
+
 }
+
 aside .button {
+
     margin-top:1em;
+
 }
+
 aside h2 {
+
     font-size:1.15em;
+
 }
+
 .button {
+
     color:#a08632;
+
     background-color:#FFF;
+
     padding:1em 2em;
+
     border-radius:3em;
+
     display:inline-block;
+
     float:none;
+
     border:2px solid transparent;
+
     transition:     0.2s ease;
+
 }
+
 .button:hover {
+
     color:#FFF;
+
     border: 2px solid #FFF;
+
     background-color:transparent;
+
     text-decoration:none;
+
 }
+
 .button.outline {
+
     background-color:transparent;
+
     border:2px solid #FFF;
+
     color:#FFF;
+
 }
+
 .button.outline:hover {
+
     color:#a08632;
+
     background-color:#FFF;
+
 }
+
 .button + .button {
+
     margin-left:1em;
+
 }
+
+
 
 /*******
+
  * Map *
+
  *******/
 
+
+
 .map {
+
     margin-top:-10em;
+
 }
+
 .map-bg {
+
     z-index:3;
+
 }
+
 .map-elements {
+
     z-index:5;
+
 }
+
 .map-bg,.map-bg img,.map-elements {
+
     width:100%;
+
 }
+
 .map-title {
+
     position:absolute;
+
     top:12em;
+
     left:10%;
+
     color:#FFF;
+
     background-color:rgba(0,0,0,0.5);
+
     padding:0.5em 0.75em;
+
     z-index:10;
+
     white-space: nowrap;
+
 }
+
 .map-title span {
+
     position:absolute;
+
     color:#d9e021;
+
     background-color:rgba(0,0,0,0.75);
+
     padding:0.5em 0.75em;
+
     top:100%;
+
     left:0;
+
 }
+
 .marker {
+
     position:absolute;
+
 }
+
 .marker1 {
+
     top:20em;
+
     left:20%;
+
 }
+
 .marker2 {
+
     top:22em;
+
     left:60%;
+
 }
+
 .marker-location {
+
     background-color:#000;
+
     color:#FFF;
+
     padding:0.5em 1em 0.5em 0.75em;
+
 }
+
 .marker-location::before {
+
     content:"";
+
     position:absolute;
+
     left:0.5em;
+
     top:100%;
+
     width:0;
+
     height:0;
+
     border-top:0.5em solid #000;
+
     border-left:0.5em solid transparent;
+
     border-right:0.5em solid transparent;
+
 }
+
 .marker-location span {
+
     background-color:#d9e021;
+
     position:absolute;
+
     left:100%;
+
     top:0;
+
     padding:0.5em 0.75em 0.5em 0.5em;
+
     margin-left:-0.25em;
+
     color:#000;
+
 }
+
 .marker-location span::before {
+
     content:"";
+
     position:absolute;
+
     right:100%;
+
     top:0;
+
     width:0;
+
     height:0;
+
     border-right:0.2em solid #d9e021;
+
     border-bottom:1.2em solid #d9e021;
+
     border-top:1.2em solid transparent;
+
     border-left:0.2em solid transparent;
+
 }
+
 .circles {
+
     position:absolute;
+
     top:100%;
+
     left:0;
+
 }
+
 .circle {
+
     display:inline-block;
+
     border-radius:50%;
+
     background-color:#d9e021;
+
     box-shadow:0 0 3px 0 rgba(0,0,0,1);
+
     float:none;
+
 }
+
 .circle.middle,.circle.low {
+
     text-align:center;
+
     opacity:0.25;
+
 }
+
 .circle.low {
+
     width:2em;
+
     height:2em;
+
     z-index:1;
+
 }
+
 .circle.middle {
+
     width:1.2em;
+
     height:1.2em;
+
     z-index:2;
+
     position:absolute;
+
     top:0.4em;
+
     left:0.4em;
+
 }
+
 .circle.high {
+
     width:0.4em;
+
     height:0.4em;
+
     box-shadow:0 0 3px 0 rgba(0,0,0,0.3);
+
     z-index:3;
+
     position:absolute;
+
     top:0.8em;
+
     left:0.8em;
+
 }
+
+
 
 /*********
+
  * About *
+
  *********/
 
+
+
 aside.right {
+
     left:auto;
+
     right:0;
+
 }
+
 aside li h2::before {
+
     content:"";
+
     position:absolute;
+
     top:0;
+
     left:-3.1em;
+
     width:1em;
+
     height:1em;
+
     border-radius:50%;
+
     background-color:#FFF;
+
 }
+
 aside li:first-child {
+
     margin-top:2em;
+
 }
+
 aside li:first-child h2 {
+
     margin-top:0;
+
 }
+
 aside li:not(:last-child) {
+
     border-left:0.15em solid #FFF;
+
 }
+
 aside li p {
+
     font-style:italic;
+
     opacity:0.7;
+
 }
+
 aside li {
+
     padding-left:3em;
+
     list-style:none;
+
     border-left:0.15em solid transparent;
+
 }
+
 aside li:last-child::before {
+
     content:"";
+
     content:"";
+
     position:absolute;
+
     top:0;
+
     left:-0.15em;
+
     width:0.15em;
+
     height:2em;
+
     background-color:#FFF;
+
 }
+
 .section-people {
+
     padding:1em 10% 3em 10%;
+
 }
+
 .section-bg {
+
     overflow:hidden;
+
 }
+
 .section-bg img {
+
     width:100%;
+
 }
+
+
 
 .avatar img {
+
     width:100%;
+
 }
+
+
 
 .about {
+
     margin-top:-9em;
+
     padding-bottom:5em;
+
 }
+
+
 
 .avatar {
+
     width:8em;
+
     height:8em;
+
     border-radius:50%;
+
     overflow:hidden;
+
     float:none;
+
     display:inline-block;
-}
-.person {
-    width:50%;
-    text-align:center;
-    margin-top:3em;
-}
-.person h2 {
-    color:#FFF;
-    font-size:1.25em;
-    text-align:center;
-    width:100%;
-}
-.person p {
-    color:#FFF;
-    text-align:center;
-    width:100%;
-}
-.section-people h1 {
-    font-family:'Rock Salt';
-    font-size:3.3em;
-    color:#FFF;
-    line-height:150%;
+
 }
 
+.person {
+
+    width:80px;
+
+    text-align:center;
+
+    margin-top:3em;
+
+}
+
+.person h2 {
+
+    color:#FFF;
+
+    font-size:1.25em;
+
+    text-align:center;
+
+    width:100%;
+
+}
+
+.person p {
+
+    color:#FFF;
+
+    text-align:center;
+
+    width:100%;
+
+}
+
+.section-people h1 {
+
+    font-family:'Rock Salt';
+
+    font-size:2.8em;
+
+    color:#FFF;
+
+    line-height:150%;
+
+}
+
+
+
 /**********
+
  * Method *
+
  **********/
+
+
 
 .method-container {
+
     width:100%;
+
     overflow:hidden;
+
     margin-top:-10em;
+
     padding-top:10em;
+
 }
+
 .method {
+
     background-color:#222;
+
     width:100%;
+
     color:#ccc;
+
 }
+
 .method::before {
+
     content:"";
+
     width:0;
+
     height:0;
+
     border-top:5em solid transparent;
+
     border-bottom:5em solid #222;
+
     border-left:100vw solid #222;
+
     border-right:100vw solid transparent;
+
     position:absolute;
+
     bottom:100%;
+
     left:0;
+
 }
+
 .method .wrap .col {
+
     padding:0 10% 10% 10%;
+
 }
+
+
 
 .method h1 {
+
     font-family:'Rock Salt';
+
     font-size:3.5em;
+
     color:#FFF;
+
     margin-bottom:1em;
+
 }
+
+
 
 .method h1 + p.big {
+
     margin-bottom:1em;
+
 }
 
+
+
 .method p.big {
+
     font-size:1.5em;
+
 }
+
 .method li {
+
     margin-top:0.5em;
+
     font-size:1.1em;
+
     margin-left:1em;
+
 }
+
 .method .mission {
+
     font-size:1.1em;
+
     line-height:150%;
+
 }
+
 .method p {
+
     margin-top:1.5em;
+
 }
+
+
+
 
 
 /**********
+
  * Footer *
+
  **********/
 
+
+
 footer {
+
     text-align:center;
+
     background-color:#222;
+
     padding-bottom:5em;
+
 }
+
 footer img {
+
     float:none;
+
     display:inline-block;
+
     width:15em;
+
 }
+
 footer p {
+
     width:100%;
+
     text-align:center;
+
     color:#999;
+
     margin-top:-2em;
+
 }
+
+
 
 /* Extra small devices (phones, less than 768px) */
+
 /* No media query since this is the default in Bootstrap */
 
+
+
 /* Small devices (tablets, 768px and up) */
+
 @media (min-width: 768px) {
+
     .landing-text {
+
         width:50%;
+
         float:right;
+
         padding:10% 10% 0 5%;
+
     }
+
     aside {
+
         width:50%;
+
         position:absolute;
+
         top:0;
+
         left:0;
+
         padding:10%;
+
         min-height:100%;
+
     }
+
     .section-people {
+
         padding-right:60%;
+
     }
+
     .footer-container {
+
         margin-top:-4em;
+
         padding-top:4em;
+
     }
+
     .method .wrap .col {
+
         padding:3em;
+
     }
+
     section.method-container {
+
         margin-top:-6em;
+
     }
+
 }
+
+
 
 /* Medium devices (desktops, 992px and up) */
+
 @media (min-width: 992px) {
+
     .about aside {
+
         padding-top:7em;
+
     }
+
     footer {
+
         margin-top:0;
+
     }
+
     aside {
+
         width:40%;
+
         position:absolute;
+
         top:0;
+
         left:0;
+
         padding:7.5%;
+
     }
+
     .about {
+
         padding-top:10em;
+
         padding-right:30%;
+
     }
+
     .person {
+
         width:33%;
+
     }
+
     .landing-text {
+
         width:40%;
+
         float:right;
+
         margin-left:30%;
+
         padding:10% 10% 0 5%;
+
     }
+
     .section-people {
+
         padding-right:20%;
+
     }
+
     section.method-container {
+
         margin-top:-4em;
+
     }
+
 }
 
+
+
 /* Large devices (large desktops, 1200px and up) */
+
 @media (min-width: 1200px) {
+
     .landing-boy {
+
         left:27%;
+
     }
+
     .landing-text h1 {
+
         font-size:3.5em;
+
     }
+
 }
